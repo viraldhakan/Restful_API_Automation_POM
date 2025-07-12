@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name=" Crud Booking Suit">
+
+    <listeners>
+        <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
+    </listeners>
+
+    <test verbose="2" preserve-order="true" name="Run Crud in Order">
+        <classes>
+            <class name="Restful.tests.crud.CreateBooking"/>
+            <class name="Restful.tests.crud.GetBooking"/>
+            <class name="Restful.tests.crud.UpdateBooking"/>
+            <class name="Restful.tests.crud.DeleteBooking"/>
+        </classes>
+    </test>
+</suite>
