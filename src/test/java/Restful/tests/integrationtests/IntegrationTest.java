@@ -1,6 +1,8 @@
 package Restful.tests.integrationtests;
 
+import Restful.actions.AssertActions;
 import Restful.endpoints.APIConstants;
+import Restful.payload.Booking;
 import Restful.tests.base.BaseTest;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import io.qameta.allure.Description;
@@ -60,9 +62,15 @@ public class IntegrationTest extends BaseTest {
                 .put();
 
         validatableResponse = response.then().log().body();
-        validatableResponse.statusCode(200).body("firstname", Matchers.is("Rajiv"));
+        validatableResponse.body("firstname", Matchers.is("Rajiv"));
 
         System.out.println("Booking ID:- " + iTestContext.getAttribute("bookingid"));
+
+        Booking updatebooking = response.as(Booking.class);
+
+        AssertActions assertActions1 = new AssertActions();
+        assertActions1.verifyStatusCode(response);
+        assertActions1.verifyResponseBody(updatebooking.getFirstname(),"Rajiv","Verify a firstname is Rajiv");
 
     }
 

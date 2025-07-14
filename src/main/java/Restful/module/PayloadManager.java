@@ -13,8 +13,8 @@ public class PayloadManager {
     public String CreatePayload() throws JsonProcessingException {
 
         Booking booking = new Booking();
-        booking.setFirstname("Vijay");
-        booking.setLastname("Bajaj");
+        booking.setFirstname("Viral");
+        booking.setLastname("Dhakan");
         booking.setTotalprice(55000);
         booking.setDepositpaid(true);
         booking.setAdditionalneeds("Breakfast,Lunch");
