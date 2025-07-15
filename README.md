@@ -3,7 +3,7 @@
 
 ## Tech Stack
 
-- Full Folder Structure Framework
+- POM Folder Structure Framework
 - RestAssured
 - Java
 - TestNG 
