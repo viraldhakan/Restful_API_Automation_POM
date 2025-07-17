@@ -8,5 +8,7 @@
 - Java
 - TestNG 
 - Maven
+- AssertJ
 - Jackson and GSON
 - Jenkins File
+- Allure Report 
