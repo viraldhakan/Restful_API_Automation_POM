@@ -1,3 +1,7 @@
+![Java](https://img.shields.io/badge/Language-Java-blue)
+![Maven](https://img.shields.io/badge/Build-Maven-brightgreen)
+![TestNG](https://img.shields.io/badge/TestFramework-TestNG-orange)
+
 # 🧪 Restful Booker API Automation Framework
 
 A robust and scalable **API Automation Testing Framework** built to perform **CRUD operations** on the **Restful Booker API** using Java and RestAssured. The framework is structured with the **Page Object Model (POM)** design for easy maintenance, reusability, and scalability.
